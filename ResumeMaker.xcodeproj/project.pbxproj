@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		847E31BF2D030B0300EBB2A4 /* DownloadResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E31BE2D030B0300EBB2A4 /* DownloadResumeViewController.swift */; };
 		84CC99AA2D00909E0034AB04 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC99A92D00909E0034AB04 /* AboutVC.swift */; };
 		84CC99AC2D0090BD0034AB04 /* ContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC99AB2D0090BD0034AB04 /* ContactVC.swift */; };
 		84CC99AE2D0090D80034AB04 /* EducationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC99AD2D0090D80034AB04 /* EducationVC.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		847E31BE2D030B0300EBB2A4 /* DownloadResumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadResumeViewController.swift; sourceTree = "<group>"; };
 		84CC99A92D00909E0034AB04 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 		84CC99AB2D0090BD0034AB04 /* ContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactVC.swift; sourceTree = "<group>"; };
 		84CC99AD2D0090D80034AB04 /* EducationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationVC.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				84CC99AF2D0091100034AB04 /* ExperienceVC.swift */,
 				84CC99B12D00912F0034AB04 /* SkillsVC.swift */,
 				84CC99B32D00913E0034AB04 /* DoneVC.swift */,
+				847E31BE2D030B0300EBB2A4 /* DownloadResumeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				84CC99AA2D00909E0034AB04 /* AboutVC.swift in Sources */,
 				84D123472D005BD8003DAC49 /* AppDelegate.swift in Sources */,
 				84CC99AC2D0090BD0034AB04 /* ContactVC.swift in Sources */,
+				847E31BF2D030B0300EBB2A4 /* DownloadResumeViewController.swift in Sources */,
 				84CC99B42D00913E0034AB04 /* DoneVC.swift in Sources */,
 				84D123602D005CD2003DAC49 /* DashboardVC.swift in Sources */,
 				84CC99B02D0091100034AB04 /* ExperienceVC.swift in Sources */,

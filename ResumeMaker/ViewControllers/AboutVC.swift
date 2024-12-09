@@ -21,20 +21,28 @@ class AboutVC: UIViewController {
         super.viewDidLoad()
         setFontAndColors()
     }
-
-   private func setFontAndColors(){
-       instructionsLbl.textColor = .gray
-       instructionsLbl.font = UIFont(name: "futura", size: 15)
-       instructionsLbl.text = "Fill your personal information in the fleld."
-       
-       nameLbl.textColor = .systemPurple
-       nameLbl.font = UIFont(name: "futura", size: 20)
-       
-       ageLbl.textColor = .systemPurple
-       ageLbl.font = UIFont(name: "futura", size: 20)
-       
-       genderLbl.textColor = .systemPurple
-       genderLbl.font = UIFont(name: "futura", size: 20)
+    
+    private func setFontAndColors(){
+        instructionsLbl.textColor = .gray
+        instructionsLbl.font = UIFont(name: "futura", size: 15)
+        instructionsLbl.text = "Fill your personal information in the fleld."
+        
+        nameLbl.textColor = .systemPurple
+        nameLbl.font = UIFont(name: "futura", size: 20)
+        
+        ageLbl.textColor = .systemPurple
+        ageLbl.font = UIFont(name: "futura", size: 20)
+        
+        genderLbl.textColor = .systemPurple
+        genderLbl.font = UIFont(name: "futura", size: 20)
     }
     
+    //Pass Data to DownloadVC
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        SharedData.shared.name = nameTxt.text ?? "John Doe"
+    }
+    
+    
 }
+

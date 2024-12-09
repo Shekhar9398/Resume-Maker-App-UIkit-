@@ -36,4 +36,11 @@ class ContactVC: UIViewController {
         addressLbl.font = UIFont(name: "futura", size: 20)
     }
     
+    //Pass Data to DownloadVC
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        SharedData.shared.contact = contactTxt.text ?? "7075849328"
+        SharedData.shared.email = emailTxt.text ?? "johnDoe.global@gmail.com"
+        SharedData.shared.address = addressTxt.text ?? "Seasons Street, SangamWadi, Baner, Pune 444108"
+    }
 }

@@ -50,9 +50,13 @@ class DownloadResumeViewController: UIViewController {
     
     @IBOutlet weak var skillListResume: UILabel!
     
-    @IBOutlet weak var downloadResumeBtn: UIButton!
     
-    var mySkills = ["xcode", "swift", "swiftUI", "firebase", "storyboard", "UIkit", "coredata", "frameworks"]
+    @IBOutlet weak var certificateResumeLbl: UILabel!
+    @IBOutlet weak var certificateDetailResumeLbl: UILabel!
+    
+    
+    @IBOutlet weak var downloadResumeBtn: UIButton!
+  
     
     var recieveSkillsData : String?
     
@@ -76,6 +80,8 @@ class DownloadResumeViewController: UIViewController {
         educationResume.font = UIFont(name: ResumeFonts.georgia.rawValue, size: 20)
         skillsResume.textColor = .systemTeal
         skillsResume.font = UIFont(name: ResumeFonts.georgia.rawValue, size: 20)
+        certificateResumeLbl.textColor = .systemTeal
+        certificateResumeLbl.font = UIFont(name: ResumeFonts.georgia.rawValue, size: 20)
         
         //About info
         contactResume.textColor = .gray
@@ -118,6 +124,10 @@ class DownloadResumeViewController: UIViewController {
         
         skillListResume.textColor = .darkGray
         skillListResume.font = UIFont(name: ResumeFonts.verdana.rawValue, size: 12)
+        
+        certificateDetailResumeLbl.textColor = .darkGray
+        certificateDetailResumeLbl.font = UIFont(name: ResumeFonts.verdana.rawValue, size: 12)
+        
     }
 
     func addInfoInResume(){
@@ -145,8 +155,10 @@ class DownloadResumeViewController: UIViewController {
         for skill in SharedData.shared.skills!{
             skillListResume.text! += " * " + "\(skill)" + "\n"
         }
+        
+        //Certificate
+        certificateDetailResumeLbl.text = SharedData.shared.certificate!
     }
-    
 
     @IBAction func downloadButtonTapped(_ sender: UIButton) {
         // Export the current view controller as a PDF, excluding the download button

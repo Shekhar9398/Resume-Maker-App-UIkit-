@@ -8,6 +8,11 @@ class SkillsVC: UIViewController {
     @IBOutlet weak var skillLbl : UILabel!
     @IBOutlet weak var skillTxt : UITextField!
     
+    @IBOutlet weak var certificateLbl : UILabel!
+    @IBOutlet weak var certificateTxt : UITextField!
+    
+    var mySkills = ["xcode", "swift", "swiftUI", "firebase", "storyboard", "UIkit", "coredata", "frameworks"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setFontAndColors()
@@ -20,6 +25,9 @@ class SkillsVC: UIViewController {
         
         skillLbl.textColor = .systemPurple
         skillLbl.font = UIFont(name: "futura", size: 20)
+        
+        certificateLbl.textColor = .systemPurple
+        certificateLbl.font = UIFont(name: "futura", size: 20)
     }
     
     //Pass Data to DownloadVC
@@ -35,8 +43,15 @@ class SkillsVC: UIViewController {
             
             // Split the text into an array and append skills
             let skillsArray = skillsText.components(separatedBy: ", ")
-            SharedData.shared.skills?.append(contentsOf: skillsArray)
+           
+            SharedData.shared.skills?.append(contentsOf: skillsArray )
+            print("Skill added \(skillsArray)")
+
         }
+        
+        SharedData.shared.certificate = certificateTxt.text ?? "certificate of iOS Development - BrightCode Tech(june24)"
+
+        
     }
 
     

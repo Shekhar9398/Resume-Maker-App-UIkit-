@@ -480,12 +480,29 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Certificate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uc-B3-wfy">
+                                        <rect key="frame" x="20" y="216" width="320" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Certificate Name(date)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nBD-z4-jcx">
+                                        <rect key="frame" x="20" y="257" width="320" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="0R6-SB-wAJ" firstAttribute="width" secondItem="oY4-zS-jlh" secondAttribute="width" multiplier="0.303125" constant="223" id="1qD-pe-x3j"/>
+                                    <constraint firstItem="nBD-z4-jcx" firstAttribute="top" secondItem="3uc-B3-wfy" secondAttribute="bottom" constant="20" id="3sL-Vk-cqA"/>
                                     <constraint firstItem="V2P-ne-uRN" firstAttribute="leading" secondItem="aVZ-Xm-13F" secondAttribute="leading" constant="20" id="6BB-a4-t6E"/>
+                                    <constraint firstItem="3uc-B3-wfy" firstAttribute="top" secondItem="0R6-SB-wAJ" secondAttribute="bottom" constant="40" id="BlI-Oq-ezD"/>
                                     <constraint firstItem="oY4-zS-jlh" firstAttribute="top" secondItem="V2P-ne-uRN" secondAttribute="bottom" constant="40" id="EZ1-6L-qpA"/>
+                                    <constraint firstItem="nBD-z4-jcx" firstAttribute="width" secondItem="oY4-zS-jlh" secondAttribute="width" multiplier="0.303125" constant="223" id="HCR-4J-IEx"/>
+                                    <constraint firstItem="3uc-B3-wfy" firstAttribute="width" secondItem="oY4-zS-jlh" secondAttribute="width" multiplier="0.13125" constant="278" id="JMm-VO-H23"/>
+                                    <constraint firstItem="3uc-B3-wfy" firstAttribute="leading" secondItem="oY4-zS-jlh" secondAttribute="leading" id="NQO-RC-Pgr"/>
+                                    <constraint firstItem="nBD-z4-jcx" firstAttribute="leading" secondItem="oY4-zS-jlh" secondAttribute="leading" id="Q4S-6g-3NL"/>
                                     <constraint firstItem="0R6-SB-wAJ" firstAttribute="leading" secondItem="oY4-zS-jlh" secondAttribute="leading" id="W2D-vM-ffw"/>
                                     <constraint firstItem="0R6-SB-wAJ" firstAttribute="top" secondItem="oY4-zS-jlh" secondAttribute="bottom" constant="20" id="bOR-1N-MdM"/>
                                     <constraint firstItem="V2P-ne-uRN" firstAttribute="top" secondItem="aVZ-Xm-13F" secondAttribute="top" constant="40" id="eVY-jZ-j8g"/>
@@ -504,6 +521,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="certificateLbl" destination="3uc-B3-wfy" id="iYF-t6-31U"/>
+                        <outlet property="certificateTxt" destination="nBD-z4-jcx" id="s3I-PO-c2j"/>
                         <outlet property="instructionsLbl" destination="V2P-ne-uRN" id="767-di-7B2"/>
                         <outlet property="skillLbl" destination="oY4-zS-jlh" id="Lsx-Oj-3dH"/>
                         <outlet property="skillTxt" destination="0R6-SB-wAJ" id="wbi-yA-7Rw"/>
@@ -678,8 +697,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcx-WP-tv2">
-                                <rect key="frame" x="20" y="391" width="353" height="0.0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uikit" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcx-WP-tv2">
+                                <rect key="frame" x="20" y="391" width="353" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -690,13 +709,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Certificate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eB-sp-4Gf">
+                                <rect key="frame" x="20" y="451.33333333333331" width="200" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="certificate name" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysO-2D-wXa">
+                                <rect key="frame" x="20" y="492.33333333333331" width="353" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="z5w-6h-ZlS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ysO-2D-wXa" firstAttribute="leading" secondItem="Xcx-WP-tv2" secondAttribute="leading" id="1S5-AK-GUO"/>
                             <constraint firstItem="4fT-Ga-vic" firstAttribute="leading" secondItem="z5w-6h-ZlS" secondAttribute="leading" constant="20" id="2aC-YQ-k3b"/>
+                            <constraint firstItem="5eB-sp-4Gf" firstAttribute="width" secondItem="S5h-45-Npd" secondAttribute="width" id="3Td-gq-NXK"/>
+                            <constraint firstItem="5eB-sp-4Gf" firstAttribute="top" secondItem="Xcx-WP-tv2" secondAttribute="bottom" constant="40" id="4DE-dA-js7"/>
                             <constraint firstItem="YiA-0V-OJC" firstAttribute="top" secondItem="2tX-uW-nQA" secondAttribute="bottom" constant="20" id="5MA-HP-KyZ"/>
                             <constraint firstItem="Xdb-bc-9Z2" firstAttribute="top" secondItem="JML-ps-b84" secondAttribute="bottom" constant="55" id="6Zh-sG-WaN"/>
+                            <constraint firstItem="ysO-2D-wXa" firstAttribute="top" secondItem="5eB-sp-4Gf" secondAttribute="bottom" constant="20" id="7eI-wB-R8s"/>
                             <constraint firstItem="5cf-Uy-M5W" firstAttribute="leading" secondItem="z5w-6h-ZlS" secondAttribute="leading" constant="10" id="C6r-jd-3ut"/>
                             <constraint firstItem="4fT-Ga-vic" firstAttribute="top" secondItem="JML-ps-b84" secondAttribute="bottom" constant="20" id="E65-ov-DBW"/>
                             <constraint firstItem="Xcx-WP-tv2" firstAttribute="leading" secondItem="z5w-6h-ZlS" secondAttribute="leading" constant="20" id="GHb-XW-1oL"/>
@@ -719,9 +754,11 @@
                             <constraint firstItem="x2q-pU-tzP" firstAttribute="leading" secondItem="z5w-6h-ZlS" secondAttribute="leading" constant="20" id="fb4-W1-OV6"/>
                             <constraint firstItem="z5w-6h-ZlS" firstAttribute="trailing" secondItem="5cf-Uy-M5W" secondAttribute="trailing" constant="10" id="gZx-vi-TwW"/>
                             <constraint firstItem="S5h-45-Npd" firstAttribute="top" secondItem="yfp-Fl-NkV" secondAttribute="topMargin" constant="100" id="hHK-zP-Q5M"/>
+                            <constraint firstItem="5eB-sp-4Gf" firstAttribute="leading" secondItem="S5h-45-Npd" secondAttribute="leading" id="hM9-rC-qMH"/>
                             <constraint firstAttribute="trailing" secondItem="7ag-0g-1sd" secondAttribute="trailing" constant="20" id="iP6-cf-pRw"/>
                             <constraint firstItem="2tX-uW-nQA" firstAttribute="leading" secondItem="z5w-6h-ZlS" secondAttribute="leading" constant="20" id="iaj-Fa-393"/>
                             <constraint firstItem="YiA-0V-OJC" firstAttribute="leading" secondItem="z5w-6h-ZlS" secondAttribute="leading" constant="20" id="mM3-oE-tOh"/>
+                            <constraint firstItem="ysO-2D-wXa" firstAttribute="trailing" secondItem="Xcx-WP-tv2" secondAttribute="trailing" id="o30-dP-1gq"/>
                             <constraint firstItem="z5w-6h-ZlS" firstAttribute="trailing" secondItem="Sz5-7p-tCA" secondAttribute="trailing" constant="20" id="o8c-rP-vvD"/>
                             <constraint firstItem="z5w-6h-ZlS" firstAttribute="trailing" secondItem="JML-ps-b84" secondAttribute="trailing" constant="20" id="oGG-Ha-XcP"/>
                             <constraint firstItem="z5w-6h-ZlS" firstAttribute="trailing" secondItem="SHB-NV-q2V" secondAttribute="trailing" constant="20" id="pKi-ak-Vpp"/>
@@ -730,6 +767,7 @@
                             <constraint firstItem="l3D-pz-6tg" firstAttribute="leading" secondItem="z5w-6h-ZlS" secondAttribute="leading" constant="20" id="tfM-xC-RA2"/>
                             <constraint firstItem="p3u-Fh-22X" firstAttribute="top" secondItem="z5w-6h-ZlS" secondAttribute="top" constant="70" id="uSZ-TF-zhG"/>
                             <constraint firstItem="2tX-uW-nQA" firstAttribute="top" secondItem="IuD-vg-j61" secondAttribute="bottom" constant="10" id="umL-LW-tCl"/>
+                            <constraint firstItem="5eB-sp-4Gf" firstAttribute="height" secondItem="S5h-45-Npd" secondAttribute="height" multiplier="0.84" id="vmq-km-1Pz"/>
                             <constraint firstItem="SHB-NV-q2V" firstAttribute="top" secondItem="z5w-6h-ZlS" secondAttribute="top" constant="130" id="xoX-ML-kOY"/>
                             <constraint firstItem="IuD-vg-j61" firstAttribute="top" secondItem="4fT-Ga-vic" secondAttribute="bottom" constant="10" id="yFe-mX-7GV"/>
                             <constraint firstItem="jY4-7b-DCl" firstAttribute="top" secondItem="z5w-6h-ZlS" secondAttribute="top" constant="683" id="zRM-u1-unD"/>
@@ -737,6 +775,8 @@
                     </view>
                     <connections>
                         <outlet property="addressResume" destination="Sz5-7p-tCA" id="9aC-ch-6x4"/>
+                        <outlet property="certificateDetailResumeLbl" destination="ysO-2D-wXa" id="lLx-10-StO"/>
+                        <outlet property="certificateResumeLbl" destination="5eB-sp-4Gf" id="cVP-at-Ltu"/>
                         <outlet property="collegeDateResume" destination="Xdb-bc-9Z2" id="XeH-2O-DRz"/>
                         <outlet property="collegeNameResume" destination="IuD-vg-j61" id="NkN-BQ-tzf"/>
                         <outlet property="companyDateResume" destination="SHB-NV-q2V" id="cpz-kf-PnS"/>

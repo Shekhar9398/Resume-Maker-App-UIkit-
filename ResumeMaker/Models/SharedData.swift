@@ -18,7 +18,8 @@ class SharedData{
     var companyDate : String?
     var workDetails : String?
     
-    var skills : [String]?
+    var skills : [String]? = []
+    var certificate : String?
     
     private init() {}
 }
